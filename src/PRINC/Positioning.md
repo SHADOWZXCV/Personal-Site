@@ -1,0 +1,2 @@
+- Relative position : Specify how the element is far from its default position Relative to the body , the relation between the view and the parent is still remain.
+- Other position properties : Specify how far is the element from its default position relative to the parent or the ( view ) , the relation between the view and the parent is been removed.

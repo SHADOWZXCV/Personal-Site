@@ -1,0 +1,259 @@
+#welcome { margin: 0;
+           background: url("../img/wall.jpg") center center no-repeat;
+           background-size: cover;
+           height: 105vh;
+           color: white;
+           /* display: flex;
+           width: 100%; */
+           /* font-family: 'Raleway', sans-serif;
+           font-family: 'Poppins', sans-serif;
+           font-family: 'Tajawal', sans-serif;
+           font-family: 'Josefin Sans', sans-serif;
+           font-family: 'Questrial', sans-serif;
+           font-family: 'Noto Sans TC', sans-serif;
+           font-family: 'Cantarell', sans-serif; */
+}
+
+header { position:fixed;
+         top: 0;
+         width: 100%;
+         color: white;
+         z-index: 1;
+}
+
+#below {  border: solid 2px white;
+          border-radius: 100px;
+          background: transparent;
+          color: white;
+          position: absolute;
+          bottom: 12%;
+          left: 44%;
+          right: 44%;
+          padding: 20px;
+          outline: none;
+}
+
+#below:hover {
+                animation: onHover .25s ;
+                animation-fill-mode: forwards;
+                cursor: pointer;
+}
+
+#below:focus {  outline: none;
+}
+
+#aboutProjects {  margin-top: -50px;
+                  background: #111212;
+                  padding: 50px;
+                  color:white;
+                  border-radius: 40px;
+}
+
+#borderedH3 { border: dashed .75px #222;
+              width: 40%;
+              text-align: center;
+              padding:0 50px 0 50px ;
+              border-radius: 50px;
+}
+
+#ButtonsContainer { display: flex;
+              justify-content:center;
+}
+
+.PopularProB { display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 20px;
+               text-align: center;
+               margin: 20px;
+               border: solid 1px #ddd;
+               border-radius: 25px;
+               background:none;
+               text-decoration: none;
+               color: #333;
+}
+.popularProB:focus { outline: none;
+
+}
+.PopularProB:hover {  animation: changeButtonBG .25s;
+                      animation-fill-mode: forwards;
+                      cursor: pointer;
+}
+
+/* PROJECTS PAGE */
+
+
+.SelectProject { text-align: center;
+}
+
+#CustomRoms:hover { animation: changeBackground .35s,changeHeaderSoft .35s;
+                    animation-fill-mode: forwards;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+}
+#TWRP:hover { animation: changeBackground .35s,changeHeaderSoft .35s;
+                    animation-fill-mode: forwards;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+}
+
+#TWRP ,#CustomRoms { display: inline-block;
+        margin-left: 19%;
+        margin-right: 10px;
+        margin-top:60px;
+        width: 350px;
+        height:470px;
+        background: #ddd;
+        border-radius: 20px;
+        text-align: center;
+}
+
+#TWRPHeader { padding: 20px;
+              margin: 0;
+}
+
+#TWRPImg , #LavaImg { width: 200px;
+                      height: 400px;
+                      margin: auto;
+                      background: url('/img/Screenshots/logoUser.png') center center no-repeat;
+                      background-size: 200px;
+}
+
+#CustomRoms { margin-right: 19%;
+              margin-left: 10px;
+}
+#LAVAHeader { padding: 20px;
+              margin: 0;
+}
+#LavaImg {
+           background: url('/img/Screenshots/LAVAVX.jpg') center center no-repeat;
+           background-size: 200px;
+}
+
+
+#SliderContainer {  width: 50%;
+                    height: 70px;
+                    margin: 10% auto 5vh auto;
+                    background:#333;
+                    border-radius: 100px;
+}
+
+.buttonSliderStyle { padding: 25px;
+                     background: #333;
+                     color: white;
+                     border: solid 2px #222;
+                     font-weight: bolder;
+                     font-family: "Karla";
+}
+
+.buttonSliderStyle:hover {  background: #00000055;  }
+.buttonSliderStyle:active { background: #ffffff02;  }
+
+#LeftSliderButton { float: left;
+                    border-right: none;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+}
+#RightSliderButton {  float: right;
+                      border-left: none;
+                      border-top-right-radius: 50px;
+                      border-bottom-right-radius: 50px;
+}
+
+#slideText {  height: inherit;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              margin:0;
+              color: #eee;
+              font-weight: lighter;
+              opacity:0;
+}
+
+#slideText:hover {  cursor:none;
+                    opacity: 1;
+                    animation: fadeIn 1s infinite alternate;
+
+}
+/* STYLES OF SOFTWARET */
+.ProjectAnchor {
+    text-decoration: none;
+    color: #333;
+}
+.ProjectAnchor:hover {
+    text-decoration: underline;
+}
+  /* STYLES OF TODO */
+.ulOfSheets {
+    padding-bottom: 25px;
+    width: 85%;
+  }
+.HeaderLi {
+    font-weight: bold;
+  }
+.NOTE {
+  list-style: none;
+}
+
+/* ANIMATIONs */
+@keyframes onHover {
+  from { background: #ffffff05 ; color:white;}
+  to { background: #ffffff; color: black;}
+}
+@keyframes changeHeaderBehaviuor {
+  from { background: none; } to { background: #ccc ;}
+}
+@keyframes change {
+   from {height: 100px;}
+   to {height: 75px;}
+}
+@keyframes Revertchange {
+   from { height: 75px;}
+   to { height: 100px;}
+}
+@keyframes changeColor {
+   from {color:white;}
+   to {color:black;}
+}
+@keyframes changeBackground {
+   from {background:#ddd;}
+   to {Background:Black;}
+}
+@keyframes changeHeaderSoft {
+   from {color:Black;}
+   to {color:#ddd;}
+}
+
+@keyframes changeButtonBG {
+  from { background: #efefef; fill:#222; border: solid 1px #aaa; color:black }
+  to { background: #222; fill:#efefef; border:solid 1px #eee; color:#efefef }
+}
+@keyframes changeMiniButtonBG {
+  from { background: #efefef; fill:#000; border: solid 1px black; color:black }
+  to { background: #000; fill:#efefef; border:solid 1px black; color:#efefef }
+}
+@keyframes fadeIn {
+  from{ opacity: 0;}
+  to { opacity: 1;}
+}
+/* SOFTWARE STUFF */
+@keyframes currView {
+  from{ opacity: inherit;}
+  to{ opacity: 0;}
+}
+
+
+/* Mobile devices animations */
+@keyframes Menu {
+  from {background: none; width: 100%; height: 0;}
+  to {background: white; width: 100%; height:160px;}
+}
+@keyframes ReMenu {
+  from {background: white; width: 100%; height:160px;}
+  to {background: none; width: 100%; height: 0;}
+}
+
+/* CONTACT STUFF */

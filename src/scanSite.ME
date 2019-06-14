@@ -1,0 +1,64 @@
+- Initial HTML 23th Feb. 2019
+- Finished CSS3 for the main Template 28th Feb. 2019
+- Started J.s functioning coding after 2 days!
+- Added couple of functions to manipulate
+CSS3 behave ( Scrolling - Minimal Animations ) 7th Mar. 2019.
+- Added J.s functions to hide some buggy HTML5 Elements 13/14th Mar. 2019.
+- Fixed un-clickable Anchors for the header , the <main> Tag has some effects
+on the fixed Elements , also added the script on a custom if statement which
+determens if the current page is the needed page! 15th Mar. 2019.
+@ 17th Mar. 2019 :
+- Fixed overlapping "Go below" - "mini social icons" with the next section by
+adding bottom css attribute instead of setting top.
+- Minor fixes for heading tags which has no text-align enabled!
+- Minor fix for the h1 width placing.
+- Fixed the wrong distance of the Navigation bar from the main name , now it
+works even on mobile version!
+-Finally the Go below button goes down with a specific down integer ( the last
+pixel of the last min icon does the job , but it still cuts it out at the
+middle! ).
+- Added a trick forces the page to be on the top always to set the proper
+Go below current pageYOffset.
+- The overlapping caused by fixed nav element is fixed with some problems yet
+<z-index = 1 if it is the one overlapped , or -1 if it is the one overlapping>.
+ @ 18th Mar. 2019 :
+ - The Go below button is completely fixed , with the Timeout function!
+ - Made an Algorithm detects whether the height of the page been changed or
+not , if it is changed then recalculate the height and set it to the Go Below
+button.
+- Fixed the contact bottom Icons with flexed size.
+- Made the scrollTop value = -2500 , incase someone is at the last of the page!
+-- Well , the go below button is completely fixed :
+Removed the old function which was finding the current height of the last px of
+the first page the function :
+{
+    // Scrolls down and determines the last pixel of the element to make the best
+    // results.
+    // document.documentElement.scrollTop = -2500;
+    // Algorithm to detect whether the height been changed or not ,
+    // if it is then: 18th Mar. 2019 #2
+    // var aboutProjects = document.querySelector("#MinigitHub");
+    // const heightDetectorX = window.innerHeight;
+    // var heightDetector = window.innerHeight;
+    // if(heightDetector != heightDetectorX){
+    //   document.documentElement.scrollTop = -2500;
+    //   window.setTimeout(function () {
+    //     if(window.pageYOffset == 0)
+    //     aboutProjects = aboutProjects.getBoundingClientRect().top;
+    //   }, 1200)
+    // }
+    // Makes the value set waiting till the page is fully scrolled!
+    //
+    // window.setTimeout(function () {
+    //   if(window.pageYOffset == 0)
+    //   aboutProjects = aboutProjects.getBoundingClientRect().top;
+    // }, 1200)
+}. Now it is just scrolling to the end of the page's height , cheers!
+- How many fixes I did to this one page ? :v
+
+@ 27th Mar. 2019
+- Added A new page includes Android Projects , also fixed the overlapping of
+the Header.
+- Fixed the 100vh height of the page overlapping with other contents during
+inspect page opened.
+- Other cool stuff , just made on the days before.

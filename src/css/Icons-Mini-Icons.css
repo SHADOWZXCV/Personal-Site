@@ -1,0 +1,54 @@
+.Icons { margin-bottom: 15px;
+         display: flex;
+         justify-content: center;
+}
+
+.social:hover,.MiniSocial:hover { animation: changeButtonBG .25s;
+                animation-fill-mode: forwards;
+                cursor: pointer;
+}
+
+.MiniSocial:hover { animation: changeMiniButtonBG .25s;
+                    animation-fill-mode: forwards;
+}
+
+#paypal,#Minipaypal,
+#faceBook,#MinifaceBook,
+#youtube,#Miniyoutube,
+#instagram,#Miniinstagram,
+#gitHub,#MinigitHub{
+          width: 75px;
+          height: 75px;
+          fill:#222;
+          border: solid 1px #aaa;
+          background:#efefef;
+          border-radius: 50px;
+          margin: 20px 0 20px 0;
+}
+
+#faceBook,#MinifaceBook { margin: 20px 25px 20px 25px; }
+
+
+#youtube,#Miniyoutube { margin: 20px 5px 20px 5px; }
+
+
+#instagram,#Miniinstagram { margin: 20px 25px 20px 25px; }
+
+#gitHub,#MinigitHub { margin:20px 0 20px 0; }
+
+.MiniIcons {  position: absolute;
+              bottom:5.5%;
+              left: 3%;
+}
+
+.MiniSocial { display: block; }
+
+#Minipaypal { margin: 0; }
+
+#Minipaypal,#MinifaceBook,
+#Miniyoutube,#Miniinstagram,
+#MinigitHub {
+                margin: 10px 0 0 0;
+                width: 40px;
+                height: 40px;
+}

@@ -1,0 +1,1 @@
+document.write("<footer><ul class=\"navi\" id =\"footer-nav\"><li><a href=\"software.html\">software</a></li><div class=\"divider\"></div><li><a href=\"todo.html\">todo - scheduler</a></li><div class=\"divider2\"></div><li><a href=\"#\">contact</a></li></ul></footer>");
